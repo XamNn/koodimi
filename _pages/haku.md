@@ -1,4 +1,0 @@
----
-title: Haku
-layout: search
----
