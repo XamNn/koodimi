@@ -5,3 +5,6 @@ remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
 title: Koodimi
 description: Suomalaisen Koodin Kotisivu
+
+atom_feed:
+  hide: true
