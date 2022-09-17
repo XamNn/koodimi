@@ -1,6 +1,6 @@
 ---
 layout: single
-author: Samuel kriikkula
+title: Python
 ---
 
 Python on hyvä ensimmäinen kieli.
