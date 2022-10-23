@@ -7,3 +7,17 @@ atom_feed:
   hide: true
 
 locale: fi
+
+defaults:
+  - scope:
+      path: ""
+      type: oppaat
+    values:
+      layout: single
+      toc: true
+      toc_sticky: true
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
