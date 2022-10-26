@@ -11,7 +11,6 @@ locale: fi
 defaults:
   - scope:
       path: ""
-      type: oppaat
     values:
       layout: single
       toc: true
