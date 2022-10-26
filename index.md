@@ -1,8 +1,6 @@
 ---
 layout: single
-title: "Koodimi"
+toc: false
 ---
-Tervetuloa! Koodimi on kokoelma oppaita liittyen ohjelmointiin ja tietotekniikkaan. Tule mukaan!
-
-## Oppaat
+# Oppaat
 [Rust opas](https://koodimi.fi/rust)
