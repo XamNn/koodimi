@@ -8,7 +8,7 @@ atom_feed:
 
 locale: fi
 
-url: "https://koodimi.fi/koodimi"
+url: "https://koodimi.fi"
 
 defaults:
   - scope:
