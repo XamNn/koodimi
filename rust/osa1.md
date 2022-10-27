@@ -2,7 +2,7 @@
 title: "Rust-Opas osa1 - Funktiot"
 author: "Samuel Kriikkula"
 tags: rust
-previous: /rust/osa0
+previous: https://koodimi.fi/rust/osa0
 ---
 
 Funktioilla voit käyttää koodia kirjoittamatta sitä uudestaan.
@@ -60,5 +60,3 @@ $ cargo run
 Original: 1
 Changed:  2
 ```
-
-## 
