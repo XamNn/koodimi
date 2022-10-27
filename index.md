@@ -1,4 +1,4 @@
---
+---
 layout: splash
 title: "Suomalaisen Koodin Kotisivu"
 read_time: true
@@ -13,6 +13,6 @@ feature_row:
     url: "/rust/osa0"
     btn_label: "Opiskelemaan!"
     btn_class: "btn--primary"
---
+---
 
 {% include feature_row id="feature_row" type="left" %}
