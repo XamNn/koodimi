@@ -30,10 +30,9 @@ edition = "2021"     # Rust-kielen editio. (älä vaihda)
 ```
 
 ## main.rs
-Rust-ohjelma alkaa suorittamaan aina `main` funktiosta. Main funktio löytyy tiedostosta *src/main.rs*. Funktiot määritellään sanalla `fn` jonka jälkeen tulee funktion nimi. Tässä tapauksessa emme ota argumentteja joten seuraavaksi tulee tyhjät sulut. Funktion koodi kirjoitetaan `{` ja `}` väliin.
-`println!("Hello, world!");` on yksi statement, jotka päättyy merkkiin `;`. Funktiot koostuu statementeistä sekä palautettavasta arvosta (tästä lisää myöhemmin). `!` tarkoittaa makroa, tässä tapauksessa makroa `println`.
-Tämä makro yksinkertaisesti kirjoittaa terminaaliin argumenttinsä. `"Hello, world!"` taas on merkkijono. Merkkijonot alkaa ja loppuu lainausmerkillä.
+Yksinkertaisin ohjelma on kait klassinen "Hello, world!". Cargo generoi sen sinulle!
 
+*src/main.rs*
 ```rust
 fn main() {
     println!("Hello, world!");
