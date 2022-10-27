@@ -2,8 +2,6 @@
 title: "Rust-Opas osa0"
 author: "Samuel Kriikkula"
 tags: rust
-page: 1
-next: 2
 ---
 
 Hei! Tervetuloa Rust-oppaaseni. Rust on useamman paradigman staattisesti tyypitetty käännetty ohjelmointikieli. Kielen tavoite on nopeus sekä muistiturvallisuus.
@@ -47,3 +45,5 @@ Ohjelman voi suorittaa komennolla `cargo run`.
 $ cargo run
 Hello, world!
 ```
+
+[![https://cdns.iconmonstr.com/wp-content/releases/preview/2018/240/iconmonstr-arrow-right-thin.png](Jatka)](/rust/os1)
