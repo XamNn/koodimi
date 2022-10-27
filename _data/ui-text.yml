@@ -1710,7 +1710,7 @@ fi: &DEFAULT_FI
   toc_label                  : "Tällä sivulla"
   ext_link_label             : "Suora linkki"
   less_than                  : "vähemmän kuin"
-  minute_read                : "lukuaika"
+  minute_read                : "minuutti"
   share_on_label             : "Jaa"
   meta_label                 :
   tags_label                 : "Tagit:"
