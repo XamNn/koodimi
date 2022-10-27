@@ -10,6 +10,8 @@ locale: fi
 
 url: "https://koodimi.fi"
 
+search: true
+
 defaults:
   - scope:
       path: ""
