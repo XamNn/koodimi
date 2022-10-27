@@ -2,10 +2,10 @@
 title: "Rust-Opas osa1 - Funktiot"
 author: "Samuel Kriikkula"
 tags: rust
+previous: /rust/osa0
 ---
 
 Funktioilla voit käyttää koodia kirjoittamatta sitä uudestaan.
-Funktiot määritellään `fn` sanalla. 
 
 ## Puhtaat funktiot
 Tässä esimerkkifunktio.
@@ -23,7 +23,7 @@ pub fn add(x: i32, y: i32) -> i32 {
 mod functions; // Tuo koodia functions.rs tiedostosta
 
 fn main() {
-    println!("{}", functions::add(1,2));
+    println!("{}", functions::add(1, 2));
 }
 ```
 ```
@@ -31,9 +31,11 @@ $ cargo run
 3
 ```
 
-# Epäpuhtaat funktiot
-Tämä funktio ottaa kokonumeroreferenssin ja muuttaa sitä.
-Funktio ottaa siis muuttujan eikä arvoa.
+## Epäpuhtaat funktiot
+Tämä funktio ottaa kokonumeroreferenssin `&mut i32` ja muuttaa sitä.
+Funktio muuttaa siis olemassa olevaa muuttujaa.
+`&` tarkoittaa että otetaan referenssi, ei arvoa.
+`mut` tarkoittaa että muuttuja on muutettavissa.
 
 *src/funtions.rs:*
 ```rust
@@ -48,13 +50,15 @@ mod functions;
 
 fn main() {
     let mut n = 1;
-    println!("First:  {}", n);
+    println!("Original: {}", n);
     functions::add1ToNumber(&mut n);
-    println!("Second: {}", n);
+    println!("Changed:  {}", n);
 }
 ```
 ```
 $ cargo run
-First:  1
-Second: 2
+Original: 1
+Changed:  2
 ```
+
+## 
