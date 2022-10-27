@@ -16,7 +16,7 @@ lunr:
 search: true
 
 collections:
-  docs:
+  rust:
     permalink: "/:collection/:path/"
     output: true
 
