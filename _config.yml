@@ -10,6 +10,9 @@ locale: fi
 
 url: "https://koodimi.fi"
 
+lunr:
+  search_within_pages: true
+
 search: true
 
 defaults:
