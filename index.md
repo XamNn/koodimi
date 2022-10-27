@@ -15,3 +15,5 @@ feature_row:
     btn_label: "Lue lisää"
     btn_class: "btn--primary"
 ---
+
+{% include feature_row %}
