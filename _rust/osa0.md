@@ -45,6 +45,3 @@ Ohjelman voi suorittaa komennolla `cargo run`.
 $ cargo run
 Hello, world!
 ```
-
-## Seuraava!
-[Osa1](/rust/osa1)
