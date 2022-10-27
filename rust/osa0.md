@@ -11,7 +11,7 @@ Asennus onnistuu kätevästi [rustup.rs](https://rustup.rs/) sivustolta.
 
 ## Cargo
 Cargo on rustin paketinhallintaohjelmisto. Se hoitaa kätevästi dependenssit ja kääntämisen.
-Rust kirjastoja kutsutaan "Crate" nimityksellä.
+Rust koodipakettia kutsutaan "Crate" nimityksellä.
 
 ### Cargo new
 Navigoi koodihakemistoosi. Aja `cargo new hello_world`. "hello_world" on uuden hakemiston sekä projektin nimi.
