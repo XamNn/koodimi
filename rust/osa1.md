@@ -2,7 +2,8 @@
 title: "Rust-Opas osa1 - Funktiot"
 author: "Samuel Kriikkula"
 tags: rust
-previous: osa0
+page: 2
+previous: 1
 ---
 
 Funktioilla voit käyttää koodia kirjoittamatta sitä uudestaan.
