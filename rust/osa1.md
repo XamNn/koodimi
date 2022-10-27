@@ -2,6 +2,7 @@
 title: "Rust-Opas osa1 - Funktiot"
 author: "Samuel Kriikkula"
 tags: rust
+previous: true
 previous_page_path: /rust/os0
 ---
 
