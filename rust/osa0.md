@@ -46,4 +46,5 @@ $ cargo run
 Hello, world!
 ```
 
-[![https://cdns.iconmonstr.com/wp-content/releases/preview/2018/240/iconmonstr-arrow-right-thin.png](Jatka)](/rust/os1)
+## Seuraava!
+[Osa1](/rust/osa1)
