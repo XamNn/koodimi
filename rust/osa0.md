@@ -2,7 +2,8 @@
 title: "Rust-Opas osa0"
 author: "Samuel Kriikkula"
 tags: rust
-next: "https://koodimi.fi/rust/osa1"
+page: 1
+next: 2
 ---
 
 Hei! Tervetuloa Rust-oppaaseni. Rust on useamman paradigman staattisesti tyypitetty käännetty ohjelmointikieli. Kielen tavoite on nopeus sekä muistiturvallisuus.
