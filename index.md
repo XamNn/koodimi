@@ -23,6 +23,6 @@ feature_row2:
     btn_class: "btn--primary"
 ---
 
-{% include feature_row id="feature_row" type="center" %}
-{% include feature_row id="feature_row2" type="center" %}
+{% include feature_row id="feature_row" type="left" %}
+{% include feature_row id="feature_row2" type="left" %}
 
