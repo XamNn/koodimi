@@ -19,6 +19,9 @@ collections:
   rust:
     permalink: "/:collection/:path/"
     output: true
+  seka:
+    permalink: "/:collection/:path/"
+    output: true
 
 defaults:
   - scope:
