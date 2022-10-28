@@ -13,6 +13,16 @@ feature_row:
     url: "/rust/osa0"
     btn_label: "Opiskelemaan!"
     btn_class: "btn--primary"
+feature_row2:
+  - image_path: "https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png"
+    alt: "Next.JS Logo"
+    title: "Next.JS"
+    excerpt: "Kiinnostaako Next.JS?"
+    url: "/nextjs/osa0"
+    btn_label: "Opiskelemaan!"
+    btn_class: "btn--primary"
 ---
 
-{% include feature_row id="feature_row" type="left" %}
+{% include feature_row id="feature_row" type="center" %}
+{% include feature_row id="feature_row2" type="center" %}
+
