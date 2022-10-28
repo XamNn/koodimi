@@ -3,20 +3,30 @@ title: Suomalaisen Koodin Etusivu
 layout: default
 ---
 
-
-<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
 
 <div class="title">Suomalaisen Koodin Kotisivu</div>
-  <img class="w-full" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/2048px-Rust_programming_language_black_logo.svg.png" alt="Sunset in the mountains">
-  <div class="px-6 py-4">
-    <div class="font-bold text-xl mb-2">Rust</div>
-    <p class="text-gray-700 text-base">
-      Opi Rustia!
-    </p>
-  </div>
+
+<div class="flex items-center justify-center p-20">
+    <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <img class="w-full p-10" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/2048px-Rust_programming_language_black_logo.svg.png" alt="Sunset in the mountains">
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Rust</div>
+          <p class="text-gray-700 text-base">
+            Rust on kovan luokan kieli tehty nopeaksi ja muistiturvalliseksi.
+            Se on yksi rakastetuimmista kielistä ja on nyt päätynyt jopa Linux-ytimeenkin.
+            Tule mukaan jo opi ruostekieltä!
+          </p>
+          <div class="text-center p-10">
+            <a class="bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded" href="/rust/osa0">
+              Opiskelemaan
+            </a>
+          </div>
+        </div>
+      </div>
 </div>
-  
 </div>
+
 <style>
   .title {
     font-size: 4rem;
