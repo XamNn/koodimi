@@ -43,6 +43,7 @@ pub fn for_loop() {
         println!("{}", i);
     }
 }
+
 ```
 **for** loopilla voi iteroida esimerkiski vektoreja.
 ```rust

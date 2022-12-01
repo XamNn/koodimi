@@ -20,7 +20,6 @@ pub struct Person {
 **String** = merkkijono  
 **u32** = etumerkitön 32-bittinen kokonumero
 
-
 ## Impl
 Metodeja voi implementoida structille **impl** sanalla.
 **&self** ottaa vain-luku referenssin kutsuvasta structista.

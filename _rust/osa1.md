@@ -8,7 +8,7 @@ Funktioilla voit käyttää koodia kirjoittamatta sitä uudestaan.
 
 ## Puhtaat funktiot
 Tässä esimerkkifunktio.
-Tämä funktio ottaa kaksi kokonumeroa ja palauttaa niiden summan. Käytämme tyyppiä `i32`, eli 32-bittistä kokonumeroa. Tämä on esimerkki "puhtaasta" funktiosta. Sillä ei ole sivuvaikutuksia.
+Tämä funktio ottaa kaksi kokonumeroa ja palauttaa niiden summan. Tämä on esimerkki "puhtaasta" funktiosta. Sillä ei ole sivuvaikutuksia.
 
 *src/functions.rs*:
 ```rust
@@ -16,6 +16,8 @@ pub fn add(x: i32, y: i32) -> i32 {
     x + y
 }
 ```
+
+**i32** = 32-bittinen kokonumero
 
 *src/main.rs*:
 ```rust
@@ -31,10 +33,11 @@ $ cargo run
 ```
 
 ## Epäpuhtaat funktiot
-Tämä funktio ottaa kokonumeroreferenssin `&mut i32` ja muuttaa sitä.
+Tämä funktio ottaa kokonumeroreferenssin ja muuttaa sitä.
 Funktio muuttaa siis olemassa olevaa muuttujaa.
-`&` tarkoittaa että otetaan referenssi, ei arvoa.
-`mut` tarkoittaa että muuttuja on muutettavissa.
+
+**&** = referenssi  
+**mut** = muutettavissa
 
 *src/funtions.rs:*
 ```rust

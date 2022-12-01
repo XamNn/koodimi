@@ -21,8 +21,6 @@ pub fn vector_stuff() {
 }
 ```
 
-**mut** = muuttuja on muutettavissa
-
 *src/main.rs*
 ```rust
 mod vec;
