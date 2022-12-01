@@ -16,9 +16,9 @@ pub struct Person {
 }
 ```
 
-*pub* = structi/muuttuja näkyvillä moduulin ulkopuolelle  
-*String* = merkkijono  
-*u32* = etumerkitön 32-bittinen kokonumero
+**pub** = structi/muuttuja näkyvillä moduulin ulkopuolelle  
+**String** = merkkijono  
+**u32** = etumerkitön 32-bittinen kokonumero
 
 
 ## Impl
