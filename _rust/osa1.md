@@ -36,15 +36,15 @@ $ cargo run
 Tämä funktio ottaa kokonumeroreferenssin ja muuttaa sitä.
 Funktio muuttaa siis olemassa olevaa muuttujaa.
 
-**&** = referenssi  
-**mut** = muutettavissa
-
 *src/funtions.rs:*
 ```rust
 pub fn add1ToNumber(x: &mut i32) {
     *x += 1;
 }
 ```
+
+**&** = referenssi  
+**mut** = muutettavissa
 
 *src/main.rs*:
 ```rust
@@ -61,4 +61,15 @@ fn main() {
 $ cargo run
 Original: 1
 Changed:  2
+```
+
+## Palauttaminen
+Funktiosta voi palauttaa arvon **return** sanalla. Vaihtoehtoisesti funktion viimeinen arvo palautetaan jos sitä ei seuraa puolipiste (katso ylhäältä).
+jos **return** sanan jälkeen ei seuraa arvoa, **()** (ei mitään) on palautettu. Näin käy myös  jos funktio ei omaa viimeistä arvoa.
+
+```rust
+fn my_func() {
+    return "hello";
+    println!("Hi"); // Ei suoritettu
+}
 ```
