@@ -1,0 +1,40 @@
+plugins:
+  - jekyll-include-cache
+
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+atom_feed:
+  hide: true
+
+locale: fi
+
+url: "https://koodimi.fi"
+
+lunr:
+  search_within_pages: true
+
+search: true
+
+collections:
+  rust:
+    permalink: "/:collection/:path/"
+    output: true
+  seka:
+    permalink: "/:collection/:path/"
+    output: true
+  linux:
+    permalink: "/:collection/:path/"
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+      toc: true
+      toc_sticky: true
+      author_profile: true
+      read_time: true
+      comments: false
+      share: false
+      related: true

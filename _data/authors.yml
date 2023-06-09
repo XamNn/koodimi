@@ -1,0 +1,11 @@
+Samuel Kriikkula:
+  name: "Samuel Kriikkula"
+  bio: "IT Nerd"
+  avatar: "https://kriikkula.com/assets/me.jpg"
+  links:
+    - label: "Kotisivu"
+      url: "https://kriikkula.com/"
+      icon: "bi bi-globe2"
+    - label: "Matrix"
+      url: "https://matrix.to/#/@samuel:kriikkula.com"
+      icon: "bi bi-globe2"
