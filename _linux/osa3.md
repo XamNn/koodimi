@@ -35,3 +35,8 @@ Ajetaan htop.
 ![img](/linux/htop.png)
 
 :)
+
+Päivitä paketit uusimpiin versioihin tällä komennolla:
+```
+sudo apt upgrade
+```

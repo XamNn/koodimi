@@ -66,6 +66,6 @@ Tässä muutama analysoituna.
         Ei tue yleistä hakemistorakennetta.
 
 # Luo asennusmedia
-Lata [Ventoy](https://etcher.balena.io/) tästä. Liitä muistitikku (väh. 8GB) ja seuraa ohjeita.
+Lata [Ventoy](https://www.ventoy.net/en/index.html) tästä. Liitä muistitikku (väh. 8GB) ja seuraa ohjeita.
 Kopioi ISO-tiedosto tikulle.
 Kytke tikku tietokoneeseen, boottaa tikulta, ja seuraa ohjeita.

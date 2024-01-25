@@ -6,6 +6,9 @@ tags: linux
 
 Tervetuloa Linux-kurssille! Tässä osassa opimme mikä Linux on ja mitkä perusperiaatteet Linux omaa.
 
+# Mikä se on?
+Linux on käyttöjärjestelmän ydin. Termiä Linux käytetään usein myös käyttöjärjestelmistä jotka pohjautuu Linux-ytimeen. Linux on ohjelmoijien ja eettisten hakkereiden ykkösvalinta. Suurin osa internetin palvelimistakin pyörii Linunxilla.
+
 # Free as in Freedom
 Linux on vapaa ohjelmisto. Tämä meinaa että Linux (ytimen) lähdekoodi on vapaasti tiedossa ja muutettavissa, kunhan lisenssiehtoja kunnioitetaan. Linux onkin tarkoitettu avoimeksi Unixin korvaajaksi. Linux ei olekaan vain ilmainen, se on myös, ja ensisijaisesti, vapaa.
 
