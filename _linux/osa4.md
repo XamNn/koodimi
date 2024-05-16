@@ -65,3 +65,25 @@ nano editoi-nanolla.txt
 
 Nanossa on sisäänrakennettuna monia näppäinkomentoja. Näistä lisää myöhemmin.
 Poistu nanosta Ctrl+X, Ctrl+Y, Enter
+
+## Oikeudet ja ls -la
+
+Suorita `ls -la`
+```
+$ ls -la
+total 8
+drwxr-xr-x  2 samuel users 4096 24. 3. 17:21 .
+drwx------ 45 samuel users 4096 24. 3. 17:20 ..
+-rwxrw-r--  1 samuel users    0 24. 3. 17:20 tiedosto
+```
+
+`-` merkki rivin alussa merkkaa tiedostoa, kun taas `d` merkkaa hakemistoa.
+
+Oikeudet näyttää merkkijono `rwxrw-r--`
+
+r = lukuoikeudet
+w = kirjoitusoikeudet
+x = suoritusoikeudet
+
+Ensimmäiset kolme merkkiä määrittää tiedoston omistajan oikeudet, seuraavat kolme taas omistajan ryhmän oikeudet, ja viimeiset kolme kaikkien käyttäjien oikeudet.
+Tämä tarkoittaa sitä, että tiedostoa voi lukea, kirjoittaa ja suorittaa tiedoston omistaja, tiedostoa voi lukea ja kijroittaa omistajan ryhmän jäsenet ja kaikki voivat lukea tiedostoa.

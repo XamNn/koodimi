@@ -31,7 +31,7 @@ passwd
 ```
 
 ## /etc/passwd
-Kisstaan */etc/passwd*.
+Kissataan */etc/passwd*.
 Tämä tiedosto sisältää tietoa eri käyttäjistä.
 ```
 cat /etc/passwd
