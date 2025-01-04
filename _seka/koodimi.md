@@ -1,5 +1,5 @@
 ---
-title: Mikä on Koodimi?
+title: "Mikä on Koodimi?"
 author: Samuel Kriikkula
 ---
 Koodimi on alusta tietotekniikan ja koodauksen opiskeluun.

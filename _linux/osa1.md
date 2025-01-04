@@ -67,5 +67,5 @@ Tässä muutama analysoituna.
 
 # Luo asennusmedia
 Lata [Ventoy](https://www.ventoy.net/en/index.html) tästä. Liitä muistitikku (väh. 8GB) ja seuraa ohjeita.
-Kopioi ISO-tiedosto tikulle.
+Kopioi omavalinatinsen jakelun ISO-tiedosto tikulle.
 Kytke tikku tietokoneeseen, boottaa tikulta, ja seuraa ohjeita.

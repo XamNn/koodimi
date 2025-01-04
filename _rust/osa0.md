@@ -45,3 +45,7 @@ Ohjelman voi suorittaa komennolla `cargo run`.
 $ cargo run
 Hello, world!
 ```
+
+## Cargo build
+Ohjelman voi kääntää natiivibinääriksi `cargo build` komennolla.
+Käännetty binääri löytyy `target` hakemiston alahakemistoista!
