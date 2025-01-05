@@ -3,6 +3,9 @@ Samuel Kriikkula:
   bio: "Krition Oy"
   avatar: "https://kriikkula.com/assets/me.jpg"
   links:
+    - label: "Krition"
+      url: "https://krition.fi/"
+      icon: "bi bi-globe2"
     - label: "Kotisivu"
       url: "https://kriikkula.com/"
       icon: "bi bi-globe2"

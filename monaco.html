@@ -1,0 +1,166 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monaco Editor Example</title>
+  <style>
+    html, body {
+        background-color: white;
+        height: 90%;
+        margin: 0px;
+        padding: 0px;
+    }
+    /* Set the editor container to fill the viewport */
+    #editor-container {
+      height: calc(95vh - 100px);
+    }
+
+    .cool-button {
+      background: linear-gradient(135deg, #ff4b2b, #ff416c);
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-top: 10px;
+    }
+
+    .cool-button:hover {
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .cool-button:active {
+      transform: translateY(2px);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    #container {
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid #ff4b2b;
+        border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+    <div id="container">
+        <div id="editor-container"></div>
+    </div>
+  <button id="submitbutton" class="cool-button" onclick="submit()">Lähetä</button>
+
+  <!-- Monaco Editor Loader Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.43.0/min/vs/loader.min.js"></script>
+  <script async>
+
+    const tasks = {
+        task0: {
+            lang: "rust",
+            version: "1.68.2",
+            text: "",
+            prefix: "",
+            suffix: "",
+            wanted_stdout: "Moi, Rust!\n",
+            stdin: "",
+            args: [],
+            files: [],
+        },
+        task1: {
+            lang: "rust",
+            version: "1.68.2",
+            text: "",
+            prefix: "",
+            suffix: `fn main(){println!("{}",div(5555.0,342.0));}`,
+            wanted_stdout: "16.242690058479532\n",
+            stdin: "",
+            args: [],
+            files: [],
+        },
+        task2: {
+            lang: "rust",
+            version: "1.68.2",
+            text: "",
+            prefix: "",
+            suffix: `fn main(){let a=Color::RGB(1,2,3);match a{Color::Red|Color::Blue|Color::Green=>{}Color::RGB(r,g,b)=>println!("KOODIMI{{3kld0ff43}}")}}`,
+            wanted_stdout: "KOODIMI{3kld0ff43}\n",
+            stdin: "",
+            args: [],
+            files: [],
+        }
+    };
+
+    // Configure Monaco Editor
+    require.config({ paths: { 'vs': 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.43.0/min/vs' } });
+
+    var params = new URLSearchParams(window.location.search);
+
+    var button = document.getElementById("submitbutton");
+    var editordiv = document.getElementById("container");
+
+
+    function done() {
+        editordiv.style.border = "2px solid green";
+        button.style.background = "linear-gradient(135deg, green, green)";
+      }
+
+    if (document.cookie.includes(params.get("task") + "=done")) {
+        done();
+    }
+
+    var task = tasks[params.get("task")];
+    var editor;
+    require(['vs/editor/editor.main'], function () {
+        console.log(task);
+      // Create the editor
+    editor = monaco.editor.create(document.getElementById('editor-container'), {
+        value: task.text,
+        language: task.lang,
+        theme: 'vs-light'
+      });
+    });
+
+      window.addEventListener('resize', () => {
+        editor.layout();
+      });
+      
+
+      async function submit() {
+        button.disabled = true;
+        var f = await fetch("https://emkc.org/api/v2/piston/execute", { method: "POST", body: JSON.stringify({
+    "language": task.lang,
+    "version": task.version,
+    "files": [...[
+        {
+            "content": "#![allow(warnings)]\n" + task.prefix + editor.getValue() + task.suffix
+        }
+    ], ...task.files],
+    "stdin": task.stdin,
+    "args": task.args,
+    "compile_timeout": 10000,
+    "run_timeout": 3000,
+    "compile_cpu_time": 10000,
+    "run_cpu_time": 3000,
+    "compile_memory_limit": -1,
+    "run_memory_limit": -1
+}
+      ) }).then(a => a.json());
+      console.log(f);
+      console.log(f.run.stdout);
+      if (task.wanted_stdout == f.run.stdout) {
+        button.disabled = false;
+        done();
+        alert("Hyvää työtä :)");
+        document.cookie = params.get("task") + "=done";
+      } else {
+        button.disabled = false;
+        alert("Yritä vielä. " + f.compile.stderr);
+      }
+}
+  </script>
+</body>
+</html>
