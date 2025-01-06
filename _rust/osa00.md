@@ -12,7 +12,7 @@ Hei! Tervetuloa Rust-oppaaseni (Rust Kurssi). Rust on useamman paradigman staatt
 Asennus onnistuu kätevästi [rustup.rs](https://rustup.rs/) sivustolta.
 Tarvitset myös koodieditorin. Suosittelen näitä:
 - VSCode: Kevyempi vaihtoehto
-- Rustrover: Monia eri mukavuuksia, kuten code completion ja tekoälypohjaiset suositukset
+- RustRover: Monia eri mukavuuksia, kuten code completion ja tekoälypohjaiset suositukset
 
 ## Cargo
 Cargo on rustin paketinhallintaohjelmisto. Se hoitaa kätevästi dependenssit ja kääntämisen.

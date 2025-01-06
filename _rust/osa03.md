@@ -25,8 +25,8 @@ fn print_str(s: &str) {
 
 ## String
 Omistettu merkkijono. Hyvä valinta, jos merkkijonoa tulee muuttamaan jollain tavalla.
-`String`in saa `&str` muotoon `.to_str()` metodin avulla.
-`&str` referenssin saa `String` muotoon funkitolla `String::from`.
+`String`in saa `&str` muotoon `.as_str()` metodin avulla.
+`&str` referenssin saa `String` muotoon funktiolla `String::from`.
 ```rust
 fn main() {
     let mut my_string: String = String::from("hello, ");
