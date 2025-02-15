@@ -1,5 +1,4 @@
 user-agent: *
 Allow: /$
 Allow: /rust/osa00$
-Allow: /rust/osa0$
 Disallow: /
